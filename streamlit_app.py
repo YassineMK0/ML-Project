@@ -133,7 +133,7 @@ with st.form("movie_features_form"):
         score = st.number_input("IMDb Score", min_value=0.0, max_value=10.0, value=7.0)
         budget = st.number_input("Budget ($)", min_value=1.0, value=10_000_000.0)
         year = st.number_input("Release Year", min_value=1900, max_value=2100, value=2000)
-        votes = st.number_input("Initial Votes", min_value=0, value=1000)
+        votes = st.number_input("Initial Votes", min_value=0, value=100000)
 
     submit = st.form_submit_button("Predict Revenue")
 
